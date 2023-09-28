@@ -3464,7 +3464,7 @@
         },
         "columnTable": {
           "kind": "CrosstabTable",
-          "cellSize": 89.81428571428569,
+          "cellSize": 58,
           "offset": 0,
           "graphicalFactors": [
             {
@@ -6810,7 +6810,7 @@
         },
         "columnTable": {
           "kind": "CrosstabTable",
-          "cellSize": 58.31428571428569,
+          "cellSize": 58,
           "offset": 0,
           "graphicalFactors": [
             {
