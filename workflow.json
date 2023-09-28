@@ -3677,7 +3677,7 @@
         },
         "rowTable": {
           "kind": "CrosstabTable",
-          "cellSize": 160.3252525252525,
+          "cellSize": 30,
           "offset": 0,
           "graphicalFactors": [
             {
@@ -7023,7 +7023,7 @@
         },
         "rowTable": {
           "kind": "CrosstabTable",
-          "cellSize": 171.3252525252525,
+          "cellSize": 30,
           "offset": 0,
           "graphicalFactors": [
             {
