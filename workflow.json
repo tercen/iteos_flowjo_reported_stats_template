@@ -1,23 +1,23 @@
 {
   "kind": "Workflow",
-  "id": "3ea12b25e555e610eb981fc8803f7fde",
+  "id": "5165087daeb13bfbfb75374121dcf1cf",
   "isDeleted": false,
-  "rev": "174-2123bc1ac2c0b77be5ef04d10cd6d042",
+  "rev": "145-e51eef2e09cf5931801bf19eda3a901d",
   "description": "Tercen template workflow for the analysis of FlowJo reported statistics and the generation of relevant plots.",
   "name": "Analyzing FlowJo-reported stats",
   "createdBy": "makostadima",
   "acl": {
     "kind": "Acl",
-    "owner": "MME_FlowJo_stats",
+    "owner": "tercen-dev",
     "aces": []
   },
   "createdDate": {
     "kind": "Date",
-    "value": "2023-09-20T11:59:31.112189Z"
+    "value": "2023-10-05T11:25:47.366391Z"
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2023-09-28T08:59:05.256073Z"
+    "value": "2023-10-05T22:27:58.542804Z"
   },
   "urls": [],
   "tags": [],
@@ -35,7 +35,7 @@
   "version": "",
   "authors": [],
   "isPublic": false,
-  "projectId": "5b52c65e8bb53e79e3afc8c2bf75cd95",
+  "projectId": "5165087daeb13bfbfb75374121dc8939",
   "folderId": "",
   "links": [
     {
@@ -190,39 +190,39 @@
     },
     {
       "kind": "Link",
-      "id": "8a1a5b26-51e8-4482-bc8e-db3347036a10",
-      "inputId": "dd3cb5a8-cdb9-4aa7-ae9d-6a6bb8f53ecd-i-0",
+      "id": "99c1565c-899e-4660-a512-835fa0224e14",
+      "inputId": "72fbf399-3bd3-42da-b405-283027de3ccc-i-0",
       "outputId": "bc67eab1-b861-4bcb-8b6a-dbdc8d261038-o-0"
     },
     {
       "kind": "Link",
-      "id": "7d2d1a3b-132b-4be3-9b63-3688e0862849",
+      "id": "f0e345d7-9a12-4dd1-a6fc-56d56494c676",
       "inputId": "5d741a39-1105-44f1-ae91-29db0ebbb206-i-0",
-      "outputId": "dd3cb5a8-cdb9-4aa7-ae9d-6a6bb8f53ecd-o-0"
+      "outputId": "72fbf399-3bd3-42da-b405-283027de3ccc-o-0"
     },
     {
       "kind": "Link",
-      "id": "3982def1-5b46-4fb3-899d-3ac8c2931e6f",
+      "id": "8f42b3d7-1b54-41f6-9d39-1b517f1e6607",
       "inputId": "d7e461ea-3166-41d2-868f-74fbfc90a1ee-i-0",
-      "outputId": "dd3cb5a8-cdb9-4aa7-ae9d-6a6bb8f53ecd-o-0"
+      "outputId": "72fbf399-3bd3-42da-b405-283027de3ccc-o-0"
     },
     {
       "kind": "Link",
-      "id": "d9bdbab6-5b08-4093-8d50-9d079d2d1534",
+      "id": "6c27b9ab-9223-4d2d-9242-df57eacff998",
       "inputId": "c5abb69b-1df3-45ac-86f0-a57a88a65ecf-i-0",
-      "outputId": "dd3cb5a8-cdb9-4aa7-ae9d-6a6bb8f53ecd-o-0"
+      "outputId": "72fbf399-3bd3-42da-b405-283027de3ccc-o-0"
     },
     {
       "kind": "Link",
-      "id": "0c6a8e31-86d1-4fd5-b4ea-c6dfee92352e",
-      "inputId": "f5b186af-0228-4660-b5b4-1a72bb052905-i-0",
-      "outputId": "dd3cb5a8-cdb9-4aa7-ae9d-6a6bb8f53ecd-o-0"
-    },
-    {
-      "kind": "Link",
-      "id": "04ffed05-8ca8-4e7d-9a19-6f5361933279",
+      "id": "a424d1bd-e72d-4ce5-ac01-6498965508bd",
       "inputId": "c3f55325-06d0-4048-ab8c-7f11646f28ff-i-0",
-      "outputId": "dd3cb5a8-cdb9-4aa7-ae9d-6a6bb8f53ecd-o-0"
+      "outputId": "72fbf399-3bd3-42da-b405-283027de3ccc-o-0"
+    },
+    {
+      "kind": "Link",
+      "id": "53086cbc-a23c-4bbe-95af-f70634102c0f",
+      "inputId": "f5b186af-0228-4660-b5b4-1a72bb052905-i-0",
+      "outputId": "72fbf399-3bd3-42da-b405-283027de3ccc-o-0"
     }
   ],
   "steps": [
@@ -280,12 +280,22 @@
             "kind": "Factor",
             "name": "Observation",
             "type": "string"
+          },
+          {
+            "kind": "Factor",
+            "name": "Supergroup",
+            "type": "string"
           }
         ],
         "rightFactors": [
           {
             "kind": "Factor",
             "name": "Observation",
+            "type": "string"
+          },
+          {
+            "kind": "Factor",
+            "name": "Supergroup",
             "type": "string"
           }
         ],
@@ -481,7 +491,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 2
+          "nRows": 4
         },
         "filters": {
           "kind": "Filters",
@@ -495,7 +505,7 @@
             "kind": "OperatorRef",
             "name": "Compare means",
             "version": "0.1.9",
-            "operatorId": "353db5f866a837c3f1466df3cedd6ca4",
+            "operatorId": "5165087daeb13bfbfb75374121cee345",
             "operatorKind": "DockerOperator",
             "propertyValues": [
               {
@@ -629,7 +639,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "86039adc-b928-4f87-a5c0-514418d409dd"
+        "id": "ee9d913f-43ee-4564-b05f-f38d5545d7de"
       },
       "parentDataStepId": ""
     },
@@ -887,7 +897,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 2
+          "nRows": 4
         },
         "filters": {
           "kind": "Filters",
@@ -901,7 +911,7 @@
             "kind": "OperatorRef",
             "name": "Plot",
             "version": "0.1.0",
-            "operatorId": "3ea12b25e555e610eb981fc880ca7fdd",
+            "operatorId": "5165087daeb13bfbfb75374121ceeb0e",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -1059,7 +1069,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "03a9b4e1-f321-4490-a8a8-ed363aabd8f2"
+        "id": "e0f1f192-c791-420e-b724-2124035bf95e"
       },
       "parentDataStepId": ""
     },
@@ -1067,7 +1077,7 @@
       "kind": "JoinStep",
       "id": "bc67eab1-b861-4bcb-8b6a-dbdc8d261038",
       "groupId": "",
-      "name": "Join 1",
+      "name": "Join Display names",
       "inputs": [
         {
           "kind": "InputPort",
@@ -1094,13 +1104,13 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 88.99000000000001,
+          "x": 132.99383544921875,
           "y": 55.0
         },
         "topLeft": {
           "kind": "Point",
-          "x": 593.7438943481445,
-          "y": 223.5
+          "x": 571.7438943481445,
+          "y": 224.5
         }
       },
       "state": {
@@ -1168,7 +1178,7 @@
         "kind": "TableStepModel",
         "relation": {
           "kind": "UnionRelation",
-          "id": "61c48518-8bb1-4921-8925-ab84a9ecad5d",
+          "id": "16700a5d-1a36-4505-81cb-5ba81c0e856d",
           "relations": []
         }
       }
@@ -1211,7 +1221,7 @@
         "kind": "TableStepModel",
         "relation": {
           "kind": "UnionRelation",
-          "id": "b53b7660-7f4b-46c5-9be3-30cc4820d4f0",
+          "id": "371cf3bf-70d6-405a-9c01-819341fdd2c7",
           "relations": []
         }
       }
@@ -1254,7 +1264,7 @@
         "kind": "TableStepModel",
         "relation": {
           "kind": "UnionRelation",
-          "id": "51aafdbd-c33c-4f8a-a1ff-2cc4e81e9d0f",
+          "id": "08e493a3-a72a-42e7-a981-0f092b323195",
           "relations": []
         }
       }
@@ -1447,11 +1457,11 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 2
+          "nRows": 4
         },
         "filters": {
           "kind": "Filters",
-          "removeNaN": false,
+          "removeNaN": true,
           "namedFilters": []
         },
         "operatorSettings": {
@@ -1461,7 +1471,7 @@
             "kind": "OperatorRef",
             "name": "Plot",
             "version": "0.1.0",
-            "operatorId": "3ea12b25e555e610eb981fc880ca7fdd",
+            "operatorId": "5165087daeb13bfbfb75374121ceeb0e",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -1619,7 +1629,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "9fe128e1-e383-47da-93b4-e58dce2573d9"
+        "id": "0cdecf55-6e9e-430e-b6ec-c73143043e9c"
       },
       "parentDataStepId": ""
     },
@@ -1937,7 +1947,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "fcd70a76-90a0-43c1-8b5f-ac1d12c7972d"
+        "id": "d153e920-eb56-4f38-aed6-1905e400116f"
       },
       "parentDataStepId": ""
     },
@@ -2220,13 +2230,13 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 32
+          "nRows": 44
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "b2629d72-966b-4c51-b330-75aa36ae753d"
+        "id": "59fe9b64-f492-4342-9080-c12461aa56c3"
       },
       "parentDataStepId": ""
     },
@@ -2528,7 +2538,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 2
+          "nRows": 4
         },
         "filters": {
           "kind": "Filters",
@@ -2542,7 +2552,7 @@
             "kind": "OperatorRef",
             "name": "Plot",
             "version": "0.1.0",
-            "operatorId": "3ea12b25e555e610eb981fc880ca7fdd",
+            "operatorId": "5165087daeb13bfbfb75374121ceeb0e",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -2700,7 +2710,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "f4a03429-0391-4009-9430-6a274036d67d"
+        "id": "c72bf1ff-b931-4724-991f-21d5069e1db0"
       },
       "parentDataStepId": ""
     },
@@ -2890,7 +2900,7 @@
         },
         "filters": {
           "kind": "Filters",
-          "removeNaN": false,
+          "removeNaN": true,
           "namedFilters": [
             {
               "kind": "NamedFilter",
@@ -2919,7 +2929,7 @@
             "kind": "OperatorRef",
             "name": "Identity",
             "version": "0.1.2",
-            "operatorId": "3ea12b25e555e610eb981fc880dfe3fb",
+            "operatorId": "5165087daeb13bfbfb75374121cf0787",
             "operatorKind": "ROperator",
             "propertyValues": [],
             "url": {
@@ -2992,7 +3002,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "58b96d2b-9c2c-4379-b5fd-38af5cf1d222"
+        "id": "82588b59-e264-4b0c-b1aa-b68c77ae9128"
       },
       "parentDataStepId": ""
     },
@@ -3203,7 +3213,7 @@
         },
         "filters": {
           "kind": "Filters",
-          "removeNaN": false,
+          "removeNaN": true,
           "namedFilters": []
         },
         "operatorSettings": {
@@ -3213,7 +3223,7 @@
             "kind": "OperatorRef",
             "name": "Ratio",
             "version": "2.0.0",
-            "operatorId": "353db5f866a837c3f1466df3ceb23c22",
+            "operatorId": "479c720afb58d2c6d24f9bd46154f096",
             "operatorKind": "ROperator",
             "propertyValues": [],
             "url": {
@@ -3286,7 +3296,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "c4b94187-c2b4-4cde-9198-343187f58672"
+        "id": "3b0d9234-15d9-4254-bcef-2ccf95eae159"
       },
       "parentDataStepId": ""
     },
@@ -3464,7 +3474,7 @@
         },
         "columnTable": {
           "kind": "CrosstabTable",
-          "cellSize": 58,
+          "cellSize": 58.0,
           "offset": 0,
           "graphicalFactors": [
             {
@@ -3515,7 +3525,7 @@
         },
         "filters": {
           "kind": "Filters",
-          "removeNaN": false,
+          "removeNaN": true,
           "namedFilters": []
         },
         "operatorSettings": {
@@ -3525,7 +3535,7 @@
             "kind": "OperatorRef",
             "name": "Plot",
             "version": "0.1.0",
-            "operatorId": "3ea12b25e555e610eb981fc880ca7fdd",
+            "operatorId": "5165087daeb13bfbfb75374121ceeb0e",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -3677,7 +3687,7 @@
         },
         "rowTable": {
           "kind": "CrosstabTable",
-          "cellSize": 30,
+          "cellSize": 30.0,
           "offset": 0,
           "graphicalFactors": [
             {
@@ -3709,7 +3719,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "4b38ca18-892e-4b9f-8731-cd9369d97154"
+        "id": "fb79eec4-1ca9-4142-a135-ccf2f97c1838"
       },
       "parentDataStepId": ""
     },
@@ -4033,7 +4043,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 8
+          "nRows": 10
         },
         "filters": {
           "kind": "Filters",
@@ -4094,7 +4104,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "36895b97-b27e-49f7-9a34-c3cf2ee1fb9b"
+        "id": "eee4262e-b7fb-460c-9d9a-f40d450b10ce"
       },
       "parentDataStepId": ""
     },
@@ -4312,7 +4322,7 @@
                   }
                 }
               ],
-              "name": "Kepp only matched columns"
+              "name": "Keep only matched columns"
             }
           ]
         },
@@ -4385,13 +4395,13 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 116
+          "nRows": 2
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "94dbd09a-678a-4ae8-a345-ff1d1af7cb99"
+        "id": "c4d52d94-a6d0-4fc9-81f3-6d5457c25e41"
       },
       "parentDataStepId": ""
     },
@@ -4619,7 +4629,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 32
+          "nRows": 44
         },
         "filters": {
           "kind": "Filters",
@@ -4651,7 +4661,7 @@
                   }
                 }
               ],
-              "name": "Kepp only matched columns"
+              "name": "Keep only matched columns"
             }
           ]
         },
@@ -4662,7 +4672,7 @@
             "kind": "OperatorRef",
             "name": "Identity",
             "version": "0.1.2",
-            "operatorId": "3ea12b25e555e610eb981fc880dfe3fb",
+            "operatorId": "5165087daeb13bfbfb75374121cf0787",
             "operatorKind": "ROperator",
             "propertyValues": [],
             "url": {
@@ -4777,7 +4787,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "81e7799b-105a-4576-b879-055668168f63"
+        "id": "1ceebab0-dd78-4048-9537-43f97b6757cd"
       },
       "parentDataStepId": ""
     },
@@ -4984,7 +4994,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 8
+          "nRows": 10
         },
         "filters": {
           "kind": "Filters",
@@ -4998,7 +5008,7 @@
             "kind": "OperatorRef",
             "name": "Mean and SD",
             "version": "0.1.3",
-            "operatorId": "5b52c65e8bb53e79e3afc8c2bf5f16dd",
+            "operatorId": "5165087daeb13bfbfb75374121cf1806",
             "operatorKind": "ROperator",
             "propertyValues": [],
             "url": {
@@ -5071,7 +5081,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "0a259410-d2d6-4b08-b7c7-ea74a94119aa"
+        "id": "8634f7cf-98b4-47e3-b2bd-96b2ec0cd455"
       },
       "parentDataStepId": ""
     },
@@ -5257,7 +5267,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 4
+          "nRows": 5
         },
         "filters": {
           "kind": "Filters",
@@ -5271,7 +5281,7 @@
             "kind": "OperatorRef",
             "name": "Scale",
             "version": "0.12.0",
-            "operatorId": "353db5f866a837c3f1466df3ceae2e76",
+            "operatorId": "5165087daeb13bfbfb75374121cf22d3",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -5323,7 +5333,7 @@
         },
         "rowTable": {
           "kind": "CrosstabTable",
-          "cellSize": 250.0,
+          "cellSize": 66.5,
           "offset": 0,
           "graphicalFactors": [
             {
@@ -5370,13 +5380,13 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 4
+          "nRows": 8
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "0394c55f-2f58-4e53-be27-b763d09111f9"
+        "id": "74631648-94f6-49dc-97e4-fe1336b9a5b9"
       },
       "parentDataStepId": ""
     },
@@ -5583,41 +5593,12 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 8
+          "nRows": 10
         },
         "filters": {
           "kind": "Filters",
           "removeNaN": true,
-          "namedFilters": [
-            {
-              "kind": "NamedFilter",
-              "logical": "or",
-              "not": true,
-              "filterExprs": [
-                {
-                  "kind": "FilterExpr",
-                  "filterOp": "equals",
-                  "stringValue": "",
-                  "factor": {
-                    "kind": "Factor",
-                    "name": "cellpop.Display name",
-                    "type": "string"
-                  }
-                },
-                {
-                  "kind": "FilterExpr",
-                  "filterOp": "equals",
-                  "stringValue": "NA",
-                  "factor": {
-                    "kind": "Factor",
-                    "name": "cellpop.Display name",
-                    "type": "string"
-                  }
-                }
-              ],
-              "name": "Kepp only matched columns"
-            }
-          ]
+          "namedFilters": []
         },
         "operatorSettings": {
           "kind": "OperatorSettings",
@@ -5626,7 +5607,7 @@
             "kind": "OperatorRef",
             "name": "Median and MAD",
             "version": "0.0.1",
-            "operatorId": "db93dd5fd0d029cbd6ce886ad84de6ef",
+            "operatorId": "26b5946fa9227b2d664a39d14b90b287",
             "operatorKind": "ROperator",
             "propertyValues": [],
             "url": {
@@ -5741,7 +5722,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "250aa5de-4d59-4ce8-a3c7-3731169b3ca8"
+        "id": "93a71dc2-f70c-4720-8a50-e2e5c4660ac9"
       },
       "parentDataStepId": ""
     },
@@ -5927,7 +5908,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 4
+          "nRows": 5
         },
         "filters": {
           "kind": "Filters",
@@ -5941,7 +5922,7 @@
             "kind": "OperatorRef",
             "name": "Scale",
             "version": "0.12.0",
-            "operatorId": "353db5f866a837c3f1466df3ceae2e76",
+            "operatorId": "5165087daeb13bfbfb75374121cf22d3",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -6040,13 +6021,13 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 4
+          "nRows": 8
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "6d58c05b-1d52-4f10-87d2-70edcd0ceedf"
+        "id": "1b4527fa-3e6f-4d3b-a864-6558519bb4d6"
       },
       "parentDataStepId": ""
     },
@@ -6236,7 +6217,7 @@
         },
         "filters": {
           "kind": "Filters",
-          "removeNaN": false,
+          "removeNaN": true,
           "namedFilters": [
             {
               "kind": "NamedFilter",
@@ -6265,7 +6246,7 @@
             "kind": "OperatorRef",
             "name": "Identity",
             "version": "0.1.2",
-            "operatorId": "3ea12b25e555e610eb981fc880dfe3fb",
+            "operatorId": "5165087daeb13bfbfb75374121cf0787",
             "operatorKind": "ROperator",
             "propertyValues": [],
             "url": {
@@ -6338,7 +6319,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "b795061d-3a99-48d5-9e89-8644b65c0e39"
+        "id": "3dcb4d2c-3682-436e-9f79-18add961d947"
       },
       "parentDataStepId": ""
     },
@@ -6549,7 +6530,7 @@
         },
         "filters": {
           "kind": "Filters",
-          "removeNaN": false,
+          "removeNaN": true,
           "namedFilters": []
         },
         "operatorSettings": {
@@ -6559,7 +6540,7 @@
             "kind": "OperatorRef",
             "name": "Ratio",
             "version": "2.0.0",
-            "operatorId": "353db5f866a837c3f1466df3ceb23c22",
+            "operatorId": "479c720afb58d2c6d24f9bd46154f096",
             "operatorKind": "ROperator",
             "propertyValues": [],
             "url": {
@@ -6632,7 +6613,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "7016d434-73ba-425e-a1fd-55484e8c6a37"
+        "id": "7330f253-39a0-4ac9-94e6-7bea8ea0a575"
       },
       "parentDataStepId": ""
     },
@@ -6667,7 +6648,7 @@
         "topLeft": {
           "kind": "Point",
           "x": -161.38182769775358,
-          "y": 1240.5
+          "y": 1239.5
         }
       },
       "state": {
@@ -6810,7 +6791,7 @@
         },
         "columnTable": {
           "kind": "CrosstabTable",
-          "cellSize": 58,
+          "cellSize": 58.0,
           "offset": 0,
           "graphicalFactors": [
             {
@@ -6861,7 +6842,7 @@
         },
         "filters": {
           "kind": "Filters",
-          "removeNaN": false,
+          "removeNaN": true,
           "namedFilters": []
         },
         "operatorSettings": {
@@ -6871,7 +6852,7 @@
             "kind": "OperatorRef",
             "name": "Plot",
             "version": "0.1.0",
-            "operatorId": "3ea12b25e555e610eb981fc880ca7fdd",
+            "operatorId": "5165087daeb13bfbfb75374121ceeb0e",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -7023,7 +7004,7 @@
         },
         "rowTable": {
           "kind": "CrosstabTable",
-          "cellSize": 30,
+          "cellSize": 30.0,
           "offset": 0,
           "graphicalFactors": [
             {
@@ -7055,7 +7036,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "67d0c062-441f-4e55-8e38-8ee57796ec76"
+        "id": "35aae8b9-b60d-48e8-9b05-b5cc7c5d35eb"
       },
       "parentDataStepId": ""
     },
@@ -7495,7 +7476,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "912b4a35-dd61-400d-b122-c8845d3bce1d"
+        "id": "d63a5084-f627-45e4-b383-24cf37a68399"
       },
       "parentDataStepId": ""
     },
@@ -7811,7 +7792,7 @@
             "kind": "OperatorRef",
             "name": "Plot",
             "version": "0.1.0",
-            "operatorId": "3ea12b25e555e610eb981fc880ca7fdd",
+            "operatorId": "5165087daeb13bfbfb75374121ceeb0e",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -7969,7 +7950,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "08878887-f81c-4052-be72-bb11952fbe3b"
+        "id": "df667b1c-4d5b-456b-8620-ca20d8beab22"
       },
       "parentDataStepId": ""
     },
@@ -8180,7 +8161,7 @@
             "kind": "OperatorRef",
             "name": "Plot",
             "version": "0.1.0",
-            "operatorId": "3ea12b25e555e610eb981fc880ca7fdd",
+            "operatorId": "5165087daeb13bfbfb75374121ceeb0e",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -8338,7 +8319,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "17dd2bb9-492c-4520-b09a-d8d58f33a7ad"
+        "id": "b38edf5c-7b21-40d4-b3b1-22a6b92fe72a"
       },
       "parentDataStepId": ""
     },
@@ -8566,7 +8547,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 32
+          "nRows": 44
         },
         "filters": {
           "kind": "Filters",
@@ -8598,7 +8579,7 @@
                   }
                 }
               ],
-              "name": "Kepp only matched columns"
+              "name": "Keep only matched columns"
             }
           ]
         },
@@ -8609,7 +8590,7 @@
             "kind": "OperatorRef",
             "name": "Count",
             "version": "1.0.0",
-            "operatorId": "db93dd5fd0d029cbd6ce886ad83b9f0c",
+            "operatorId": "5165087daeb13bfbfb75374121cf333f",
             "operatorKind": "ROperator",
             "propertyValues": [],
             "url": {
@@ -8724,7 +8705,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "e0b0caf7-20e4-4f3e-987e-3587920e433c"
+        "id": "c6ee8ac3-b47e-46c2-997f-a638a8b53a31"
       },
       "parentDataStepId": ""
     },
@@ -8952,41 +8933,12 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 32
+          "nRows": 44
         },
         "filters": {
           "kind": "Filters",
           "removeNaN": true,
-          "namedFilters": [
-            {
-              "kind": "NamedFilter",
-              "logical": "or",
-              "not": true,
-              "filterExprs": [
-                {
-                  "kind": "FilterExpr",
-                  "filterOp": "equals",
-                  "stringValue": "",
-                  "factor": {
-                    "kind": "Factor",
-                    "name": "cellpop.Display name",
-                    "type": "string"
-                  }
-                },
-                {
-                  "kind": "FilterExpr",
-                  "filterOp": "equals",
-                  "stringValue": "NA",
-                  "factor": {
-                    "kind": "Factor",
-                    "name": "cellpop.Display name",
-                    "type": "string"
-                  }
-                }
-              ],
-              "name": "Kepp only matched columns"
-            }
-          ]
+          "namedFilters": []
         },
         "operatorSettings": {
           "kind": "OperatorSettings",
@@ -8995,7 +8947,7 @@
             "kind": "OperatorRef",
             "name": "Flag Values",
             "version": "0.3.4",
-            "operatorId": "db93dd5fd0d029cbd6ce886ad83c2806",
+            "operatorId": "d4bc5f0172b78738836a64b1ba7b6fe2",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -9141,7 +9093,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "c3526976-5ae3-412c-95f9-e082f7c2b448"
+        "id": "78a73f7d-29cd-4ec5-8a6c-9a05d06aceff"
       },
       "parentDataStepId": ""
     },
@@ -9306,7 +9258,7 @@
         },
         "columnTable": {
           "kind": "CrosstabTable",
-          "cellSize": 39.333333333333336,
+          "cellSize": 22.708333333333336,
           "offset": 0,
           "graphicalFactors": [
             {
@@ -9363,7 +9315,7 @@
                 "extent": {
                   "kind": "Point",
                   "x": 170.0,
-                  "y": 30.0
+                  "y": 47.0
                 },
                 "topLeft": {
                   "kind": "Point",
@@ -9374,41 +9326,12 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 32
+          "nRows": 44
         },
         "filters": {
           "kind": "Filters",
           "removeNaN": true,
-          "namedFilters": [
-            {
-              "kind": "NamedFilter",
-              "logical": "or",
-              "not": true,
-              "filterExprs": [
-                {
-                  "kind": "FilterExpr",
-                  "filterOp": "equals",
-                  "stringValue": "",
-                  "factor": {
-                    "kind": "Factor",
-                    "name": "cellpop.Display name",
-                    "type": "string"
-                  }
-                },
-                {
-                  "kind": "FilterExpr",
-                  "filterOp": "equals",
-                  "stringValue": "NA",
-                  "factor": {
-                    "kind": "Factor",
-                    "name": "cellpop.Display name",
-                    "type": "string"
-                  }
-                }
-              ],
-              "name": "Kepp only matched columns"
-            }
-          ]
+          "namedFilters": []
         },
         "operatorSettings": {
           "kind": "OperatorSettings",
@@ -9532,19 +9455,19 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "d354e3aa-dbde-4144-aa70-65f5877ed7c1"
+        "id": "40a44007-25d8-4c47-885f-b0286a1fd808"
       },
       "parentDataStepId": ""
     },
     {
       "kind": "WizardStep",
-      "id": "dd3cb5a8-cdb9-4aa7-ae9d-6a6bb8f53ecd",
+      "id": "72fbf399-3bd3-42da-b405-283027de3ccc",
       "groupId": "",
       "name": "Wizard",
       "inputs": [
         {
           "kind": "InputPort",
-          "id": "dd3cb5a8-cdb9-4aa7-ae9d-6a6bb8f53ecd-i-0",
+          "id": "72fbf399-3bd3-42da-b405-283027de3ccc-i-0",
           "linkType": "relation",
           "name": "table"
         }
@@ -9552,7 +9475,7 @@
       "outputs": [
         {
           "kind": "OutputPort",
-          "id": "dd3cb5a8-cdb9-4aa7-ae9d-6a6bb8f53ecd-o-0",
+          "id": "72fbf399-3bd3-42da-b405-283027de3ccc-o-0",
           "linkType": "relation",
           "name": "table"
         }
@@ -9566,8 +9489,8 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 593.7438943481445,
-          "y": 308.5
+          "x": 593.7458120727539,
+          "y": 309.5
         }
       },
       "state": {
@@ -9749,7 +9672,7 @@
           },
           {
             "kind": "MappingFilter",
-            "name": "Kepp only matched columns",
+            "name": "Keep only matched columns",
             "description": "",
             "namedFilter": {
               "kind": "NamedFilter",
@@ -9777,7 +9700,7 @@
                   }
                 }
               ],
-              "name": "Kepp only matched columns"
+              "name": "Keep only matched columns"
             },
             "isRequired": false
           },
@@ -9826,40 +9749,6 @@
                 }
               ],
               "name": "Select your control compound/condition (median)"
-            },
-            "isRequired": false
-          },
-          {
-            "kind": "MappingFilter",
-            "name": "Keep only matched columns",
-            "description": "",
-            "namedFilter": {
-              "kind": "NamedFilter",
-              "logical": "or",
-              "not": true,
-              "filterExprs": [
-                {
-                  "kind": "FilterExpr",
-                  "filterOp": "equals",
-                  "stringValue": "",
-                  "factor": {
-                    "kind": "Factor",
-                    "name": "cellpop.Display name",
-                    "type": "string"
-                  }
-                },
-                {
-                  "kind": "FilterExpr",
-                  "filterOp": "equals",
-                  "stringValue": "NA",
-                  "factor": {
-                    "kind": "Factor",
-                    "name": "cellpop.Display name",
-                    "type": "string"
-                  }
-                }
-              ],
-              "name": "Keep only matched columns"
             },
             "isRequired": false
           }
@@ -9928,7 +9817,7 @@
                 "type": "string"
               }
             ],
-            "isRequired": false
+            "isRequired": true
           },
           {
             "kind": "MappingFactor",
@@ -10032,7 +9921,7 @@
           },
           {
             "kind": "MappingFilter",
-            "name": "Kepp only matched columns",
+            "name": "Keep only matched columns",
             "description": "",
             "namedFilter": {
               "kind": "NamedFilter",
@@ -10060,7 +9949,7 @@
                   }
                 }
               ],
-              "name": "Kepp only matched columns"
+              "name": "Keep only matched columns"
             },
             "isRequired": false
           },
@@ -10111,40 +10000,6 @@
               "name": "Select your control compound/condition (median)"
             },
             "isRequired": false
-          },
-          {
-            "kind": "MappingFilter",
-            "name": "Keep only matched columns",
-            "description": "",
-            "namedFilter": {
-              "kind": "NamedFilter",
-              "logical": "or",
-              "not": true,
-              "filterExprs": [
-                {
-                  "kind": "FilterExpr",
-                  "filterOp": "equals",
-                  "stringValue": "",
-                  "factor": {
-                    "kind": "Factor",
-                    "name": "cellpop.Display name",
-                    "type": "string"
-                  }
-                },
-                {
-                  "kind": "FilterExpr",
-                  "filterOp": "equals",
-                  "stringValue": "NA",
-                  "factor": {
-                    "kind": "Factor",
-                    "name": "cellpop.Display name",
-                    "type": "string"
-                  }
-                }
-              ],
-              "name": "Keep only matched columns"
-            },
-            "isRequired": false
           }
         ]
       }
@@ -10152,7 +10007,7 @@
   ],
   "offset": {
     "kind": "Point",
-    "x": 172.0,
-    "y": 200.0
+    "x": 230.0,
+    "y": 215.0
   }
 }
