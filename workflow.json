@@ -2,7 +2,7 @@
   "kind": "Workflow",
   "id": "0382da54b765e77f4bee3b95dcde5c5e",
   "isDeleted": false,
-  "rev": "220-19179c11f80467e84afbe75b7ff3cb61",
+  "rev": "223-dabe78aebe5d9c8d610edea2532847f5",
   "description": "Tercen template workflow for the analysis of FlowJo reported statistics and the generation of relevant plots, including ratio heatmaps.",
   "name": "Analyzing FlowJo-reported stats",
   "acl": {
@@ -16,7 +16,7 @@
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2024-01-10T16:49:36.723320Z"
+    "value": "2024-01-10T17:02:37.568765Z"
   },
   "urls": [
     {
@@ -339,30 +339,8 @@
       "description": "",
       "model": {
         "kind": "JoinStepModel",
-        "leftFactors": [
-          {
-            "kind": "Factor",
-            "name": "Observation",
-            "type": "string"
-          },
-          {
-            "kind": "Factor",
-            "name": "Supergroup",
-            "type": "string"
-          }
-        ],
-        "rightFactors": [
-          {
-            "kind": "Factor",
-            "name": "Observation",
-            "type": "string"
-          },
-          {
-            "kind": "Factor",
-            "name": "Supergroup",
-            "type": "string"
-          }
-        ],
+        "leftFactors": [],
+        "rightFactors": [],
         "rightPrefix": "sample",
         "joinType": ""
       },
@@ -751,23 +729,7 @@
       "description": "",
       "model": {
         "kind": "MeltStepModel",
-        "factors": [
-          {
-            "kind": "Factor",
-            "name": "var01",
-            "type": "double"
-          },
-          {
-            "kind": "Factor",
-            "name": "var02",
-            "type": "double"
-          },
-          {
-            "kind": "Factor",
-            "name": "var03",
-            "type": "double"
-          }
-        ],
+        "factors": [],
         "namespace": "exp",
         "selectionPattern": "",
         "factorType": "double",
@@ -1200,13 +1162,7 @@
             "type": "string"
           }
         ],
-        "rightFactors": [
-          {
-            "kind": "Factor",
-            "name": "FlowJo name",
-            "type": "string"
-          }
-        ],
+        "rightFactors": [],
         "rightPrefix": "cellpop",
         "joinType": ""
       },
@@ -12950,7 +12906,7 @@
                 "type": "string"
               }
             ],
-            "isRequired": true
+            "isRequired": false
           },
           {
             "kind": "MappingFactor",
