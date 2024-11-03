@@ -1,0 +1,25 @@
+fcs names,ELN,samples,ATP,compound,antibody
+fcs_file_01,eln_01,sample_01,0,DMSO,IgG1
+fcs_file_02,eln_01,sample_02,0,DMSO,IgG1
+fcs_file_03,eln_01,sample_03,0,DMSO,IgG1
+fcs_file_04,eln_01,sample_04,500,DMSO,IgG1
+fcs_file_05,eln_01,sample_05,500,DMSO,IgG1
+fcs_file_06,eln_01,sample_06,500,DMSO,IgG1
+fcs_file_07,eln_01,sample_07,0,MyCompound,IgG1
+fcs_file_08,eln_01,sample_08,0,MyCompound,IgG1
+fcs_file_09,eln_01,sample_09,0,MyCompound,IgG1
+fcs_file_10,eln_01,sample_10,500,MyCompound,IgG1
+fcs_file_11,eln_01,sample_11,500,MyCompound,IgG1
+fcs_file_12,eln_01,sample_12,500,MyCompound,IgG1
+fcs_file_13,eln_02,sample_13,0,DMSO,IgG1
+fcs_file_14,eln_02,sample_14,0,DMSO,IgG1
+fcs_file_15,eln_02,sample_15,0,DMSO,IgG1
+fcs_file_16,eln_02,sample_16,500,DMSO,IgG1
+fcs_file_17,eln_02,sample_17,500,DMSO,IgG1
+fcs_file_18,eln_02,sample_18,500,DMSO,IgG1
+fcs_file_19,eln_02,sample_19,0,MyCompound,IgG1
+fcs_file_20,eln_02,sample_20,0,MyCompound,IgG1
+fcs_file_21,eln_02,sample_21,0,MyCompound,IgG1
+fcs_file_22,eln_02,sample_22,500,MyCompound,IgG1
+fcs_file_23,eln_02,sample_23,500,MyCompound,IgG1
+fcs_file_24,eln_02,sample_24,500,MyCompound,IgG1
