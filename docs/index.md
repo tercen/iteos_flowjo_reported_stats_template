@@ -6,17 +6,18 @@ This workflow allows the automation and parallelization of many plot analyses.
 # Create Project
 
 Create a Project in Tercen  
-Note: If you create in a Team, then you can share it easier
+
+>:bulb: If you create in a Team, then you can share it more easily.
 
 # Preparation of the three files
 
-You require three files
+You require three files.
 
 * Measurement file  
 * Sample annotation file  
 * Display name file
 
-These can be created from the Flowjo Export Table file
+These can be created from the Flowjo Export Table file.
 
 Here is a link to a template of the three files.  
 Download them and fill them out.
