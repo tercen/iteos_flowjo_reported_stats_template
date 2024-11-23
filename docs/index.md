@@ -1,44 +1,14 @@
-## Table of Contents {#table-of-contents}
+# Introduction to the step-by-step guide {#introduction-to-the-step-by-step-guide}
 
-[Table of Contents](#table-of-contents)
+Here are step-by-step instructions on how to run the FlowJo stat workflow.  
+This workflow allows the automation and parallelization of many plot analyses.
 
-[Introduction to the step by step guide](#introduction-to-the-step-by-step-guide)
-
-[Create Project](#create-project)
-
-[Preparation of the 3 files](#preparation-of-the-3-files)
-
-[Uploading the data](#uploading-the-data)
-
-[Finding the template](#finding-the-template)
-
-[Open the workflow](#open-the-workflow)
-
-[Gather Step](#gather-step)
-
-[Join Step](#join-step)
-
-[Wizard Step](#wizard-step)
-
-[Checking if all the annotation are correct](#checking-if-all-the-annotation-are-correct)
-
-[Create Filter](#create-filter)
-
-[Customization of Plots](#customization-of-plots)
-
-[Download the Data and Plots](#download-the-data-and-plots)
-
-## Introduction to the step by step guide {#introduction-to-the-step-by-step-guide}
-
-Here is a step by step instruction on how to run the FlowJo stat workflow.  
-It is a workflow allowing automation and parallelization of many plots analysis.
-
-## Create Project {#create-project}
+# Create Project
 
 Create a Project in Tercen  
-Note: If you create in a Team then you can share it easier
+Note: If you create in a Team, then you can share it easier
 
-## Preparation of the 3 files {#preparation-of-the-3-files}
+# Preparation of the three files
 
 You require three files
 
@@ -49,9 +19,9 @@ You require three files
 These can be created from the Flowjo Export Table file
 
 Here is a link to a template of the three files.  
-Download them and fill them.
+Download them and fill them out.
 
-## Uploading the data {#uploading-the-data}
+# Uploading the data {#uploading-the-data}
 
 When uploading the data:
 
@@ -59,21 +29,21 @@ When uploading the data:
 * SEB import as “character”  
 * Days import as “character”
 
-## Finding the template {#finding-the-template}
+# Finding the template
 
-I copied it from a project
+I copied it from a project.
 
-## Open the workflow {#open-the-workflow}
+# Open the workflow
 
-### Gather Step {#gather-step}
+## Gather Step
 
 * Remove all and add all
 
-### Join Step {#join-step}
+## Join Step
 
 Run the join
 
-### Wizard Step {#wizard-step}
+## Wizard Step
 
 | Question | Action | Remark |
 | ----- | :---: | ----- |
@@ -89,13 +59,13 @@ Run the join
 | "Select the factors representing the conditions. Multiple selections are possible. Examples:  \`sample.compound\`, \`sample.ATP\`, \`sample.Ab\`, \`sample.Ab2\` and etc..",  | sample.Ab sample.Ab2 sample.treatment sample.STP sample.SEB  | Manually selected |
 | Selecting the control per condition (z-score on mean) Filters \- Select your control compound/condition | sample.treatment \= DMSO ATP \=0 SEB \=1 Ab= PD1 Ab2 \= Belrestotug | Manually selected Apply filter |
 
-### Checking if all the annotation are correct {#checking-if-all-the-annotation-are-correct}
+## Checking if all the annotations are correct
 
-Checking if all there is one single value per cell
+Checking if there is one single value per cell
 
-### Create Filter  {#create-filter}
+## Create Filter
 
-## Customization of Plots {#customization-of-plots}
+# Customization of Plots
 
 | Point plot | 2Gb |
 | :---- | :---- |
@@ -103,5 +73,5 @@ Checking if all there is one single value per cell
 | Barplot (mean) with sd error bars | 2Gb |
 | Heatmap | 2Gb, 1000x3000 |
 
-## Download the Data and Plots {#download-the-data-and-plots}
+# Download the Data and Plots
 
