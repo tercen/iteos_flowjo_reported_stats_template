@@ -1,4 +1,4 @@
-# Introduction to the step-by-step guide {#introduction-to-the-step-by-step-guide}
+# Introduction to the step-by-step guide
 
 Here are step-by-step instructions on how to run the FlowJo stat workflow.  
 This workflow allows the automation and parallelization of many plot analyses.
